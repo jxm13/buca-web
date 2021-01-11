@@ -3,6 +3,10 @@ body {
   scroll-behavior: smooth;
 }
 
+.row {
+  width: 100%;
+}
+
 .section-1 {
   height: 100vh;
   background-color: #00bd84;
@@ -408,6 +412,78 @@ body {
   .desktop4-div3-2-heading,
   .desktop4-div3-2-para {
     text-align: center;
+  }
+  .desktop3-1-1,
+  .desktop3-1-2,
+  .desktop3-2-1,
+  .desktop3-2-2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .create-account,
+  .design-buca,
+  .share,
+  .start-network {
+    margin: auto;
+    display: grid;
+    width: 70%;
+  }
+
+  .phone-img-1,
+  .phone-img-2,
+  .phone-img-3,
+  .phone-img-4 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 30%;
+  }
+
+  .desktop3-heading {
+    color: #00bd84;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .desktop3-description-1 {
+    text-align: left;
+    color: #2d3436;
+    font-size: 24px;
+  }
+  .desktop3-description-2 {
+    text-align: left;
+    color: #5c5c5c;
+    font-size: 16px;
+  }
+
+  .desktop3-button {
+    background-color: #00bd84;
+    color: #ffffff;
+    font-size: 16px;
+    width: fit-content !important;
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    padding: 1% 5%;
+    margin-top: 3% !important;
+  }
+  .desktop3-main {
+    padding: 0 1%;
+  }
+  .create-account > div > div,
+  .design-buca > div > div,
+  .share > div > div,
+  .start-network > div > div {
+    margin: 0;
+  }
+
+  .desktop3-1-1,
+  .desktop3-1-2,
+  .desktop3-2-1,
+  .desktop3-2-2 {
+    
+    height: 50vh;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
