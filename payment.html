@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./Assets/Logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+
+    <!-- bootstrap -->
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- font awesome -->
+
+    <script
+      src="https://kit.fontawesome.com/1be64c5a1d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital@1;wght@500;600;700;800&family=Rubik:wght@500&family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- custom styling -->
+
+    <link rel="stylesheet" href="payment.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="navbar.css" />
+  </head>
+  <body>
+    <div id="home" className="container">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand mr-auto" href="www.google.com">
+          <img src="./Assets/Logo.png" alt="buca logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <i class="fa fa-navicon" style="color: #000; font-size: 28px"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse menu" id="navbarNav">
+          <ul class="navbar-nav ml-auto navbar-right">
+            <li class="nav-item">
+<a class="nav-link" href="main.html"> Home </a>            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="main.html#desktop3"> How it works </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html"> Pricing </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mission.html">
+                Our Sustainable Mission
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="main">
+      <div class="section">
+        <div class="section-first">
+          <div class="first-1">
+            <div class="section-circle section-circle-1"></div>
+          </div>
+          <div class="first-2">
+            <div class="first-2-top">
+              <div class="div-content">
+                <div class="">
+                  <h3>Enter your name</h3>
+                </div>
+                <div>
+                  <input
+                    class="step-1 step-1-name"
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div class="">
+                  <h3>Enter your E-mail id</h3>
+                </div>
+                <div>
+                  <input
+                    class="step-1 step-1-email"
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="first-3-last"><div>STEP 1</div></div>
+          </div>
+        </div>
+        <div class="seciton-second">
+          <div class="second-1">
+            <div class="section-circle section-circle-2"></div>
+          </div>
+          <div class="second-2">
+            <div class="second-2-top">
+              <div class="div-content">
+                <div>
+                  <h3>
+                    Enter your <br />
+                    organization’s name
+                  </h3>
+                </div>
+                <div>
+                  <input
+                    class="step-2-orgname"
+                    style="width: 70%"
+                    type="text"
+                    name="orgName"
+                    placeholder="Organization Name"
+                  />
+                </div>
+                <div>
+                  <h3>Upload the logo</h3>
+                </div>
+                <div>
+                  <label class="myFile">
+                    <input
+                      id="logo"
+                      class="logo"
+                      type="file"
+                      name="filename"
+                      style="visibility: hidden"
+                    />
+                    Upload
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="second-3-last"><div>STEP 2</div></div>
+          </div>
+        </div>
+        <div class="seciton-third">
+          <div class="third-1">
+            <div class="section-circle section-circle-3"></div>
+          </div>
+          <div class="third-2">
+            <div class="third-2-top">
+              <div class="div-content">
+                <h3>Upload your visiting card</h3>
+                <div class="third-upload">
+                  <div class="side">
+                    <h3>Front side</h3>
+                    <div class="add-button">
+                      <label class="third-upload-button">
+                        <input
+                          class="third-front-side"
+                          type="file"
+                          name="filename"
+                          style="visibility: hidden"
+                        />
+                        +
+                      </label>
+                      <p>Upload Image</p>
+                    </div>
+                  </div>
+                  <hr id="hr" />
+                  <div class="side">
+                    <h3>Back side</h3>
+                    <div class="add-button">
+                      <label class="third-upload-button">
+                        <input
+                          class="third-back-side"
+                          type="file"
+                          name="filename"
+                          style="visibility: hidden"
+                        />
+                        +
+                      </label>
+                      <p>Upload Image</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="third-3-last"><div>STEP 3</div></div>
+          </div>
+        </div>
+        <div class="seciton-fourth">
+          <div class="fourth-1">
+            <div class="section-circle section-circle-4"></div>
+          </div>
+          <div class="fourth-2">
+            <div class="fourth-2-top">
+              <div class="div-content">
+                <div>
+                  <h3>Make the payment</h3>
+                </div>
+                <div class="fourth-content">
+                  <div>
+                    <label for="">Card Holder's Name </label>
+                    <input class="step-4-cardname" type="text" name="" id="" />
+                  </div>
+                  <div>
+                    <label for=""> Card Number </label>
+                    <input
+                      class="step-4-cardnumber"
+                      type="number"
+                      name=""
+                      id=""
+                    />
+                  </div>
+                  <div class="payment-last">
+                    <div class="payment-last-input">
+                      <label for=""> Expiry Date </label>
+                      <input
+                        class="step-4-expdate"
+                        name=""
+                        id=""
+                        type="text"
+                        onfocus="(this.placeholder='dd/mm/yyyy')"
+                      />
+                    </div>
+                    <div class="payment-last-input">
+                      <label for=""> CVV </label>
+                      <input class="step-4-cvv" type="number" name="" id="" />
+                    </div>
+                  </div>
+                  <div class="cards-icon">
+                    <img
+                      src="./Assets/what-payment-methods-are-accepted-on-zazzle-help-center-payment-options-png-2463_512.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="fourth-3-last"><div>STEP 4</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-paynow">
+        <div class="paynow">
+          <button onclick="window.location.href='process.html'">Pay Now</button>
+        </div>
+        <div class="assistance">
+          <div class="assist-heading">
+            <button>Contact sales</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-div1">
+        <div>
+          <a href="">
+            <img class="footer-div1-img" src="./Assets/Group 925.png" alt="" />
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img class="footer-div1-img" src="./Assets/Group 924.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="footer-div2">
+        <div>
+          <p class="footer-para">KEEP IN TOUCH</p>
+        </div>
+        <div>
+          <input
+            class="footer-div2-input"
+            type=""
+            name="name"
+            placeholder="Your Name"
+          />
+          <input
+            class="footer-div2-input"
+            type="text"
+            name="email"
+            placeholder="E-mail"
+          />
+        </div>
+        <div>
+          <input
+            class="footer-div2-input2"
+            name="message"
+            placeholder="Leave you message"
+          />
+          <button type="button" class="btn btn-success footer-div2-button">
+            SEND
+          </button>
+        </div>
+      </div>
+      <div class="footer-div3">
+        <div>
+          <p class="footer-para">Information</p>
+        </div>
+
+        <table>
+          <tr>
+            <td>
+              <div>
+                <p class="footer-subpara">About buca app</p>
+              </div>
+              <div>
+                <p class="footer-subpara">Get in touch</p>
+              </div>
+              <div>
+                <p class="footer-subpara">Our Mission</p>
+              </div>
+            </td>
+            <td>
+              <div>
+                <p class="footer-subpara">We are hiring!</p>
+              </div>
+              <div>
+                <p class="footer-subpara">Privacy Policy</p>
+              </div>
+              <div>
+                <p class="footer-subpara">Terms of Service</p>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="footer-div4">
+        <div>
+          <p class="footer-para">FOLLOW US</p>
+        </div>
+        <div class="footer-icons">
+          <a href="">
+            <img src="./Assets/Vector.png" alt="" />
+          </a>
+          <a href="">
+            <img src="./Assets/ant-design_facebook-filled.png" alt="" />
+          </a>
+          <a href="">
+            <img src="./Assets/instagram.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $("input").on("change", () => {
+        if ($(".step-1-name").val() && $(".step-1-email").val()) {
+          $(".section-circle-1").css("background-color", "#00bd84");
+          $(".section-circle-1").css("border-color", "#ffffff");
+
+          if ($(".step-2-orgname").val() && $(".logo").val()) {
+            $(".section-circle-2").css("background-color", "#00bd84");
+            $(".section-circle-2").css("border-color", "#ffffff");
+
+            if ($(".third-front-side").val() && $(".third-back-side").val()) {
+              $(".section-circle-3").css("background-color", "#00bd84");
+              $(".section-circle-3").css("border-color", "#ffffff");
+
+              if (
+                $(".step-4-cardname").val() &&
+                $(".step-4-cardnumber").val() &&
+                $(".step-4-expdate").val() &&
+                $(".step-4-cvv").val()
+              ) {
+                $(".section-circle-4").css("background-color", "#00bd84");
+                $(".section-circle-4").css("border-color", "#ffffff");
+              }
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

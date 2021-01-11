@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./Assets/Logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing</title>
+
+    <!-- bootstrap -->
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital@1;wght@500;600;700;800&family=Rubik:wght@500&family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+
+    <script
+      src="https://kit.fontawesome.com/1be64c5a1d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- custom styling -->
+
+    <link rel="stylesheet" href="pricing.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="navbar.css" />
+  </head>
+
+  <body>
+    <div id="home" className="container">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand mr-auto navbar-left" href="www.google.com">
+          <img src="./Assets/Logo.png" alt="buca logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <i class="fa fa-navicon" style="color: #000; font-size: 28px"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse menu" id="navbarNav">
+          <ul class="navbar-nav ml-auto navbar-right">
+            <li class="nav-item">
+<a class="nav-link" href="main.html"> Home </a>            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="main.html#desktop3"> How it works </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html"> Pricing </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mission.html">
+                Our Sustainable Mission
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="main">
+      <div class="header">
+        <h3>Choose the plan that suits your needs.</h3>
+      </div>
+
+      <div class="section">
+        <div>
+          <div class="section-1">
+            <div class="left zoom">
+              <h3>Design it Yourself</h3>
+
+              <h2>
+                Free
+                <span>/ FOREVER</span>
+              </h2>
+
+              <button type="button" class="btn btn-success zoom">
+                START NOW
+              </button>
+            </div>
+            <div class="right zoom">
+              <h3>Let us take care!</h3>
+
+              <h2>
+                29.99
+                <span>/ ONE TIME</span>
+              </h2>
+              <p>
+                Our expert designers will digitalize or design your new buca.
+              </p>
+
+              <button
+                type="button"
+                class="btn btn-success zoom"
+                onclick="window.location.href='payment.html'"
+              >
+                Get it
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="section-2">
+          <div class="section-2-heading">
+            <h3>Trusted by Thousands of Happy Customer</h3>
+            <p>
+              These are the stories of our customers who have joined us with
+              great pleasure.
+            </p>
+          </div>
+          <div
+            id="carouselExampleControls"
+            class="section-2-cards carousel slide carousel-inner"
+            data-ride="carousel"
+          >
+            <div class="carouselcard carousel-item active">
+              <div class="card1">
+                <div class="card1-header">
+                  <div class="card1-header-img">
+                    <img src="./Assets/Ellipse 175.png" alt="" />
+                  </div>
+                  <div class="card1-header-text">
+                    <h3>Viezh Robert</h3>
+                    <p>Warsaw, Poland</p>
+                  </div>
+                  <div class="card1-header-rating">
+                    <p>4.5⭐</p>
+                  </div>
+                </div>
+                <div class="card1-para">
+                  <p>
+                    “Wow... I am very happy to use this App, it turned out to be
+                    more than my expectations and so far there have been no
+                    problems”.
+                  </p>
+                </div>
+              </div>
+              <div class="card1">
+                <div class="card1-header">
+                  <div class="card1-header-img">
+                    <img src="./Assets/image 6.png" alt="" />
+                  </div>
+                  <div class="card1-header-text">
+                    <h3>Arthur</h3>
+                    <p>Geneva, Switzerland</p>
+                  </div>
+                  <div class="card1-header-rating">
+                    <p>4.5⭐</p>
+                  </div>
+                </div>
+                <div class="card1-para">
+                  <p>
+                    “Wow... I am very happy to use this App, it turned out to be
+                    more than my expectations and so far there have been no
+                    problems”.
+                  </p>
+                </div>
+              </div>
+              <div class="card1">
+                <div class="card1-header">
+                  <div class="card1-header-img">
+                    <img src="./Assets/image 7.png" alt="" />
+                  </div>
+                  <div class="card1-header-text">
+                    <h3>Kirsten</h3>
+                    <p>Copenhagen, Denmark</p>
+                  </div>
+                  <div class="card1-header-rating">
+                    <p>4.5⭐</p>
+                  </div>
+                </div>
+                <div class="card1-para">
+                  <p>
+                    “Wow... I am very happy to use this App, it turned out to be
+                    more than my expectations and so far there have been no
+                    problems”.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carouselcard carousel-item">
+              <div class="card1">
+                <div class="card1-header">
+                  <div class="card1-header-img">
+                    <img src="./Assets/Ellipse 175.png" alt="" />
+                  </div>
+                  <div class="card1-header-text">
+                    <h3>Viezh Robert</h3>
+                    <p>Warsaw, Poland</p>
+                  </div>
+                  <div class="card1-header-rating">
+                    <p>4.5⭐</p>
+                  </div>
+                </div>
+                <div class="card1-para">
+                  <p>
+                    “Wow... I am very happy to use this App, it turned out to be
+                    more than my expectations and so far there have been no
+                    problems”.
+                  </p>
+                </div>
+              </div>
+              <div class="card1">
+                <div class="card1-header">
+                  <div class="card1-header-img">
+                    <img src="./Assets/image 6.png" alt="" />
+                  </div>
+                  <div class="card1-header-text">
+                    <h3>Arthur</h3>
+                    <p>Geneva, Switzerland</p>
+                  </div>
+                  <div class="card1-header-rating">
+                    <p>4.5⭐</p>
+                  </div>
+                </div>
+                <div class="card1-para">
+                  <p>
+                    “Wow... I am very happy to use this App, it turned out to be
+                    more than my expectations and so far there have been no
+                    problems”.
+                  </p>
+                </div>
+              </div>
+              <div class="card1">
+                <div class="card1-header">
+                  <div class="card1-header-img">
+                    <img src="./Assets/image 7.png" alt="" />
+                  </div>
+                  <div class="card1-header-text">
+                    <h3>Kirsten</h3>
+                    <p>Copenhagen, Denmark</p>
+                  </div>
+                  <div class="card1-header-rating">
+                    <p>4.5⭐</p>
+                  </div>
+                </div>
+                <div class="card1-para">
+                  <p>
+                    “Wow... I am very happy to use this App, it turned out to be
+                    more than my expectations and so far there have been no
+                    problems”.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-2-controls">
+            <ol class="section-2-indicators">
+              <li
+                data-target="#myCarousel"
+                data-slide-to="0"
+                class="indicators indicator-active"
+              ></li>
+              <li
+                data-target="#myCarousel"
+                data-slide-to="1"
+                class="indicators"
+              ></li>
+              <li
+                data-target="#myCarousel"
+                data-slide-to="2"
+                class="indicators"
+              ></li>
+              <li
+                data-target="#myCarousel"
+                data-slide-to="3"
+                class="indicators"
+              ></li>
+            </ol>
+
+            <div class="section-2-arrows">
+              <div
+                href="#carouselExampleControls"
+                role="button"
+                data-slide="prev"
+                class="left-arrow"
+              >
+                <img src="./Assets/Vector (2).png" alt="" />
+              </div>
+              <div
+                href="#carouselExampleControls"
+                role="button"
+                data-slide="next"
+                class="right-arrow"
+              >
+                <img src="./Assets/Vector (1).png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-div1">
+        <div>
+          <a href="">
+            <img class="footer-div1-img" src="./Assets/Group 925.png" alt="" />
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img class="footer-div1-img" src="./Assets/Group 924.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="footer-div2">
+        <div>
+          <p class="footer-para">KEEP IN TOUCH</p>
+        </div>
+        <div>
+          <input
+            class="footer-div2-input"
+            type=""
+            name="name"
+            placeholder="Your Name"
+          />
+          <input
+            class="footer-div2-input"
+            type="text"
+            name="email"
+            placeholder="E-mail"
+          />
+        </div>
+        <div>
+          <input
+            class="footer-div2-input2"
+            name="message"
+            placeholder="Leave you message"
+          />
+          <button type="button" class="btn btn-success footer-div2-button">
+            SEND
+          </button>
+        </div>
+      </div>
+      <div class="footer-div3">
+        <div>
+          <p class="footer-para">Information</p>
+        </div>
+
+        <table>
+          <tr>
+            <td class="footer-div-table-data">
+              <div>
+                <p class="footer-subpara">About buca app</p>
+              </div>
+              <div>
+                <p class="footer-subpara">Get in touch</p>
+              </div>
+              <div>
+                <p class="footer-subpara">Our Mission</p>
+              </div>
+            </td>
+            <td class="footer-div-table-data">
+              <div>
+                <p class="footer-subpara">We are hiring!</p>
+              </div>
+              <div>
+                <p class="footer-subpara">Privacy Policy</p>
+              </div>
+              <div>
+                <p class="footer-subpara">Terms of Service</p>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="footer-div4">
+        <div>
+          <p class="footer-para">FOLLOW US</p>
+        </div>
+        <div class="footer-icons">
+          <a href="">
+            <img src="./Assets/Vector.png" alt="" />
+          </a>
+          <a href="">
+            <img src="./Assets/ant-design_facebook-filled.png" alt="" />
+          </a>
+          <a href="">
+            <img src="./Assets/instagram.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

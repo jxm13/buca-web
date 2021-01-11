@@ -1,0 +1,21 @@
+.navbar {
+  background-color: white;
+  box-shadow: 0px 0px 20px 0px grey;
+  padding: 0 4.5rem;
+  height: auto;
+  text-align: right;
+}
+.navbar-brand {
+  height: fit-content;
+}
+.nav-item {
+  padding: 0 18px;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 0.5mm;
+}
+.nav-link {
+  color: #00bd84;
+  font-size: 19px;
+  text-decoration: none;
+}
