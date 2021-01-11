@@ -7,9 +7,62 @@ body {
   width: 100%;
 }
 
+.section-landing {
+  height: inherit;
+  background-image: url("./Assets/Group\ 1155.png"),
+    url("./Assets/Group\ 1146.png");
+  background-repeat: no-repeat;
+  background-size: 130px 130px, 225px 225px;
+  background-position: right 2% top 27%, left top;
+}
+
 .section-1 {
-  height: 100vh;
-  background-color: #00bd84;
+  height: 130vh;
+  width: 100%;
+  /* overflow-x: unset; */
+  background-image: url("./Assets/buca\ bgp\ \(2\).svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100vw 100%;
+  /* background-image: url("./Assets/bg\ phone.png");
+background-position: top;
+background-repeat: no-repeat, no-repeat;
+background-size: 100vw 100%; */
+}
+
+.section-landing > div {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.heading-div {
+  height: inherit;
+  width: inherit;
+  color: #455a64;
+  margin: auto;
+  padding-top: 15%;
+  margin-left: 5%;
+  width: 40%;
+}
+.heading-div > div > h2 {
+  letter-spacing: 0.2cm;
+  font-size: 44px;
+  width: 100%;
+  font-weight: 800;
+}
+.heading-div > div > h3 {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0.5mm;
+  color: #000000;
+}
+.heading-div > div > button {
+  margin-top: 1%;
+  font-weight: 600;
+  font-size: 13px;
+  background-color: #49bfa7;
+  letter-spacing: 0.1cm;
 }
 .zoom {
   transition: all 0.2s ease-in-out;
@@ -341,16 +394,33 @@ body {
     width: 100%;
     height: 55vh;
   }
+
+  .section-1 {
+    background-image: url("./Assets/bg\ phone.png");
+    background-position: bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 60% 50%;
+  }
+  .section-landing {
+    background-image: url("./Assets/Group\ 1155.png"),
+      url("./Assets/Group\ 1146.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px, 225px 225px;
+    background-position: right 15% top 60%, left top;
+  }
   .container-fluid {
     margin: auto;
   }
   .heading-div {
     width: 100%;
+    margin: auto;
+    padding-top: 35%;
+    text-align: center;
   }
-  .heading-div > h2 {
+  .heading-div > div > h2 {
     font-size: 40px;
   }
-  .heading-div > h3 {
+  .heading-div > div > h3 {
     font-size: 20px;
   }
   .desktop2-div1 {
@@ -482,7 +552,6 @@ body {
   .desktop3-1-2,
   .desktop3-2-1,
   .desktop3-2-2 {
-    
     height: 50vh;
   }
 }
@@ -494,6 +563,36 @@ body {
     width: 100%;
     height: 45vh;
   }
+
+  .heading-div {
+    height: inherit;
+    width: inherit;
+    color: #455a64;
+    margin: auto;
+    padding-top: 15%;
+    margin-left: 5%;
+    width: 60%;
+  }
+  .heading-div > div > h2 {
+    letter-spacing: 0.2cm;
+    font-size: 35px;
+    width: 100%;
+    font-weight: 800;
+  }
+  .heading-div > div > h3 {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.5mm;
+    color: #000000;
+  }
+  .heading-div > div > button {
+    margin-top: 1%;
+    font-weight: 600;
+    font-size: 13px;
+    background-color: #49bfa7;
+    letter-spacing: 0.1cm;
+  }
+
   .desktop2-div1 {
     text-align: center;
     margin: auto;
@@ -582,6 +681,13 @@ body {
   .desktop4-div2 > div {
     width: 33%;
     margin: 0 2%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-1 {
+    height: 100vh;
+    width: 100%;
   }
 }
 
