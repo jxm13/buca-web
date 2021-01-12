@@ -103,9 +103,7 @@
     <div class="main">
       <div class="section">
         <div class="section-first">
-          <div class="first-1">
-            <div class="section-circle section-circle-1"></div>
-          </div>
+          <div class="first-1"></div>
           <div class="first-2">
             <div class="first-2-top">
               <div class="div-content">
@@ -137,9 +135,7 @@
           </div>
         </div>
         <div class="seciton-second">
-          <div class="second-1">
-            <div class="section-circle section-circle-2"></div>
-          </div>
+          <div class="second-1"></div>
           <div class="second-2">
             <div class="second-2-top">
               <div class="div-content">
@@ -180,9 +176,7 @@
           </div>
         </div>
         <div class="seciton-third">
-          <div class="third-1">
-            <div class="section-circle section-circle-3"></div>
-          </div>
+          <div class="third-1"></div>
           <div class="third-2">
             <div class="third-2-top">
               <div class="div-content">
@@ -227,9 +221,7 @@
           </div>
         </div>
         <div class="seciton-fourth">
-          <div class="fourth-1">
-            <div class="section-circle section-circle-4"></div>
-          </div>
+          <div class="fourth-1"></div>
           <div class="fourth-2">
             <div class="fourth-2-top">
               <div class="div-content">
@@ -392,20 +384,20 @@
           navigator.userAgent
         )
       ) {
-        alert("accessed via mobile viewport");
+        alert("We prefer to swtich to desktop for payment.");
       }
+
+      var a = "";
+
       $("input").on("change", () => {
         if ($(".step-1-name").val() && $(".step-1-email").val()) {
-          $(".section-circle-1").css("background-color", "#00bd84");
-          $(".section-circle-1").css("border-color", "#ffffff");
+          $(".first-1").addClass("first-1-bg");
 
           if ($(".step-2-orgname").val() && $(".logo").val()) {
-            $(".section-circle-2").css("background-color", "#00bd84");
-            $(".section-circle-2").css("border-color", "#ffffff");
+            $(".second-1").addClass("second-1-bg");
 
             if ($(".third-front-side").val() && $(".third-back-side").val()) {
-              $(".section-circle-3").css("background-color", "#00bd84");
-              $(".section-circle-3").css("border-color", "#ffffff");
+              $(".third-1").addClass("third-1-bg");
 
               if (
                 $(".step-4-cardname").val() &&
@@ -413,11 +405,18 @@
                 $(".step-4-expdate").val() &&
                 $(".step-4-cvv").val()
               ) {
-                $(".section-circle-4").css("background-color", "#00bd84");
-                $(".section-circle-4").css("border-color", "#ffffff");
+                $(".fourth-1").addClass("fourth-1-bg");
+              } else {
+                $(".fourth-1").removeClass("fourth-1-bg");
               }
+            } else {
+              $(".third-1").removeClass("third-1-bg");
             }
+          } else {
+            $(".second-1").removeClass("second-1-bg");
           }
+        } else {
+          $(".first-1").removeClass("first-1-bg");
         }
       });
     </script>

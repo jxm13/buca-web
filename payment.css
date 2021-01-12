@@ -2,7 +2,6 @@
   user-select: none;
 }
 
-
 .main {
   background-image: url("./Assets/Vector\ \(3\).png"),
     url("./Assets/Group\ 1155.png");
@@ -47,6 +46,19 @@
 }
 
 .first-1 {
+  border: 1px solid rgb(124, 194, 173);
+}
+.second-1 {
+  border: 1px solid rgb(94, 193, 163);
+}
+.third-1 {
+  border: 1px solid rgb(70, 199, 160);
+}
+.fourth-1 {
+  border: 1px solid rgb(56, 205, 160);
+}
+
+.first-1-bg {
   background: rgb(124, 194, 173);
   background: linear-gradient(
     90deg,
@@ -54,7 +66,7 @@
     rgba(94, 193, 163, 1) 87%
   );
 }
-.second-1 {
+.second-1-bg {
   background: rgb(94, 193, 163);
   background: linear-gradient(
     90deg,
@@ -62,7 +74,8 @@
     rgba(70, 199, 160, 1) 87%
   );
 }
-.third-1 {
+
+.third-1-bg {
   background: rgb(70, 199, 160);
   background: linear-gradient(
     90deg,
@@ -70,7 +83,7 @@
     rgba(56, 205, 160, 1) 87%
   );
 }
-.fourth-1 {
+.fourth-1-bg {
   background: rgb(56, 205, 160);
   background: linear-gradient(
     90deg,
@@ -359,32 +372,16 @@ input::-webkit-outer-spin-button {
   }
 
   .first-1 {
-    background: linear-gradient(
-      180deg,
-      rgba(124, 194, 173, 1) 0%,
-      rgba(94, 193, 163, 1) 87%
-    );
+    border: 1px solid rgb(124, 194, 173);
   }
   .second-1 {
-    background: linear-gradient(
-      180deg,
-      rgba(94, 193, 163, 1) 0%,
-      rgba(70, 199, 160, 1) 87%
-    );
+    border: 1px solid rgb(94, 193, 163);
   }
   .third-1 {
-    background: linear-gradient(
-      180deg,
-      rgba(70, 199, 160, 1) 0%,
-      rgba(56, 205, 160, 1) 87%
-    );
+    border: 1px solid rgb(70, 199, 160);
   }
   .fourth-1 {
-    background: linear-gradient(
-      180deg,
-      rgba(56, 205, 160, 1) 0%,
-      rgba(0, 189, 132, 1) 87%
-    );
+    border: 1px solid rgb(56, 205, 160);
   }
   .section-circle {
     border: 5px solid #00bd84;
