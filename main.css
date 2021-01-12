@@ -88,8 +88,12 @@ background-size: 100vw 100%; */
 .desktop2-div1 > .img1 {
   padding-left: 2%;
 }
+.desktop2-div1-img2-div {
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
 .desktop2-div1 > .img2 {
-  margin-left: 8%;
   width: 100%;
 }
 .desktop2-div2,
