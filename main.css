@@ -18,13 +18,12 @@ body {
 }
 
 .section-1 {
-  height: 130vh;
   width: 100%;
-  /* overflow-x: unset; */
-  background-image: url("./Assets/buca\ bgp\ \(2\).svg");
-  background-position: top;
+  height: 100vh;
+  background-image: url("./only\ land.svg");
+  background-size: 1500px 1500px;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 100vw 100%;
   /* background-image: url("./Assets/bg\ phone.png");
 background-position: top;
 background-repeat: no-repeat, no-repeat;
